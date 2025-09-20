@@ -189,7 +189,7 @@ export default function Home() {
             <Image
               height={100}
               width={100}
-              src="/assets/dubai-skyline.png"
+              src="/assets/img-6.jpg"
               alt="Attendees networking at Sina Consultancy Conference 2026"
               className="card__image"
             />
