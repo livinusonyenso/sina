@@ -1,0 +1,45 @@
+import type { Metadata } from "next";
+import Script from "next/script";
+import Layout from "@/components/Layout";
+
+import { Barlow } from "next/font/google";
+import "./globals.css";
+
+const barlow = Barlow({
+  variable: "--font-barlow",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+export const metadata: Metadata = {
+  title: "Sina Consulting",
+  description: "Global IT Consulting Company",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={`${barlow.variable} antialiased`}>
+        <Layout>{children}</Layout>
+        <script defer src="/scripts/jquery-3.7.1.min.js"></script>
+        <script defer src="/scripts/owl.carousel.min.js"></script>
+        <script defer src="/scripts/index.js"></script>
+        {/* <Script
+          defer
+          src="/scripts/jquery-3.7.1.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          defer
+          src="/scripts/owl.carousel.min.js"
+          strategy="afterInteractive"
+        />
+        <Script defer src="/scripts/index.js" strategy="afterInteractive" /> */}
+      </body>
+    </html>
+  );
+}
