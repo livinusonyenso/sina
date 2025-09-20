@@ -7,6 +7,7 @@ import SectionTitle from "@/components/SectionTitle";
 import useOwlCarouselHook, {
   owlCarouselConfig_one_and_Half_Box,
 } from "@/hooks/useOwlCarouselHook";
+import Link from "next/link";
 
 export default function About() {
   const { handleOwlReadyOne } = useOwlCarouselHook(
@@ -56,14 +57,14 @@ export default function About() {
             innovation, integrity, and excellence.
           </p>
 
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="dac-btn outline"
             role="button"
             aria-label="Learn more about Sina Consultancy"
           >
             Contact us
-          </a>
+          </Link>
         </div>
       </section>
 

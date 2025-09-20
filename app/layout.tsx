@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Sina Consulting",
     description:
       "Global IT Consulting Company that delivers innovative solutions. Help businesses thrive in the digital age.",
-    url: "https://sinaconsulting.vercel.app/",
+    url: "https://sina-consulting-website.vercel.app/",
     siteName: "Sina Consulting",
     images: [
       {

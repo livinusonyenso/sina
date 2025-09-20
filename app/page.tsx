@@ -165,8 +165,8 @@ export default function Home() {
             >
               <span className="card__icon" aria-hidden="true">
                 <Image
-                  height={24}
-                  width={24}
+                  height={16}
+                  width={16}
                   src="/assets/card-arrow.svg"
                   role="presentation"
                   alt=""
@@ -207,8 +207,8 @@ export default function Home() {
             >
               <span className="card__icon" aria-hidden="true">
                 <Image
-                  height={24}
-                  width={24}
+                  height={16}
+                  width={16}
                   src="/assets/card-arrow.svg"
                   role="presentation"
                   alt=""
