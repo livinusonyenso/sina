@@ -12,7 +12,7 @@ export default function Services() {
 
   return (
     <>
-      <Script src="/scripts/jquery-3.7.1.min.js" strategy="beforeInteractive" />
+      {/* <Script src="/scripts/jquery-3.7.1.min.js" strategy="beforeInteractive" />
       <Script
         src="/scripts/owl.carousel.min.js"
         strategy="afterInteractive"
@@ -20,7 +20,7 @@ export default function Services() {
           handleOwlReadyOne("#carousel-container");
         }}
       />
-      <Script src="/scripts/index.js" strategy="afterInteractive" />
+      <Script src="/scripts/index.js" strategy="afterInteractive" /> */}
 
       <SectionTitle
         heading="Our Services"
@@ -65,7 +65,7 @@ Below, you'll find a detailed overview of the core services that define Sina Con
             Navigating Change and Seizing Opportunity
           </h3>
           <p className="hero-text-paragraph m-0">
-            In today's fast-evolving global marketplace, a clear and robust
+            In today fast-evolving global marketplace, a clear and robust
             business strategy is the foundation of lasting success. At Sina
             Consulting Services , we partner with organizations to craft
             strategies that are not only visionary but also actionable and
@@ -76,7 +76,7 @@ Below, you'll find a detailed overview of the core services that define Sina Con
           </h4>
           <p className="hero-text-paragraph m-0">
             Our business strategy consultants work closely with your executive
-            team to deeply understand your organization'ss mission, values, and
+            team to deeply understand your organizations mission, values, and
             objectives. We conduct thorough market and competitive analyses,
             leveraging advanced data analytics and industry research to identify
             trends, opportunities, and threats. Our process includes stakeholder
@@ -295,7 +295,7 @@ Below, you'll find a detailed overview of the core services that define Sina Con
             Our Approach
           </h4>
           <p className="hero-text-paragraph m-0">
-            We begin with a comprehensive assessment of your organization's
+            We begin with a comprehensive assessment of your organization
             current state—evaluating workflows, leadership styles, communication
             channels, and cultural dynamics. Through interviews, surveys, and
             process mapping, we identify bottlenecks, inefficiencies, and
@@ -395,7 +395,7 @@ Below, you'll find a detailed overview of the core services that define Sina Con
             Elevating Skills, Inspiring Growth
           </h3>
           <p className="hero-text-paragraph m-0">
-            Continuous learning is a strategic advantage in today's
+            Continuous learning is a strategic advantage in today
             fast-changing world. **Sina Consulting Services** offers a broad
             range of professional education programs designed to nurture talent,
             close skills gaps, and drive organizational excellence.
@@ -412,7 +412,7 @@ Below, you'll find a detailed overview of the core services that define Sina Con
           <p className="hero-text-paragraph m-0">
             We offer a blend of in-person workshops, virtual classrooms, and
             e-learning modules, ensuring flexible delivery that fits your
-            organization's culture and schedule. Our curriculum spans
+            organizations culture and schedule. Our curriculum spans
             foundational skills, advanced technical training, leadership
             development, and industry certifications.
           </p>
