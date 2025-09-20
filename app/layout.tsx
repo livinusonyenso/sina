@@ -13,7 +13,35 @@ const barlow = Barlow({
 
 export const metadata: Metadata = {
   title: "Sina Consulting",
-  description: "Global IT Consulting Company",
+  description:
+    "Global IT Consulting Company that delivers innovative solutions. Help businesses thrive in the digital age.",
+  icons: {
+    icon: "/favicon.png",
+  },
+  openGraph: {
+    title: "Sina Consulting",
+    description:
+      "Global IT Consulting Company that delivers innovative solutions. Help businesses thrive in the digital age.",
+    url: "https://sinaconsulting.vercel.app/",
+    siteName: "Sina Consulting",
+    images: [
+      {
+        url: "/favicon.png",
+        width: 1200,
+        height: 630,
+        alt: "Sina Consulting",
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sina Consulting",
+    description:
+      "Global IT Consulting Company that delivers innovative solutions. Help businesses thrive in the digital age.",
+    images: ["/favicon.png"],
+  },
 };
 
 export default function RootLayout({
