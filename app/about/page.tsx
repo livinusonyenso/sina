@@ -133,7 +133,13 @@ export default function About() {
         </article>
 
         <article className="flex-one  dac-zoom-in rounded-2xl overflow-hidden">
-          <img src="/assets/img-7.jpg" className="w-100 object-cover h-100" />
+          <Image
+            height={100}
+            width={100}
+            src="/assets/img-7.jpg"
+            className="w-100 object-cover h-100"
+            alt="About Sina Consultancy"
+          />
         </article>
 
         <article className="flex-one items-end bg_primary vision_card rounded-16 flex align-items-end  p-40 fs-32 color-sky-blue font-600 line-height-40 bg-primary dac-zoom-in ">

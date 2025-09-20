@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutCard({
@@ -10,7 +11,7 @@ export default function AboutCard({
   className?: string;
 }) {
   return (
-    <article className={`card dac-zoom-in ` + className} >
+    <article className={`card dac-zoom-in ` + className}>
       <div className="card-content">
         <h3>
           <Link
@@ -22,7 +23,13 @@ export default function AboutCard({
           </Link>
         </h3>
         <span className="arrow-icon" aria-hidden="true">
-          <img src="/assets/card-arrow.svg" role="presentation" alt="" />
+          <Image
+            height={100}
+            width={100}
+            src="/assets/card-arrow.svg"
+            role="presentation"
+            alt=""
+          />
         </span>
       </div>
     </article>

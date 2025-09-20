@@ -1,14 +1,11 @@
 "use client";
 import SectionTitle from "@/components/SectionTitle";
-import ServiceCard from "@/components/ServiceCard";
-import useOwlCarouselHook, {
-  owlConfig_two_and_half_box,
-} from "@/hooks/useOwlCarouselHook";
-import Script from "next/script";
-import { useEffect } from "react";
+// import useOwlCarouselHook, {
+//   owlConfig_two_and_half_box,
+// } from "@/hooks/useOwlCarouselHook";
 
 export default function Services() {
-  const { handleOwlReadyOne } = useOwlCarouselHook(owlConfig_two_and_half_box);
+  // const { handleOwlReadyOne } = useOwlCarouselHook(owlConfig_two_and_half_box);
 
   return (
     <>

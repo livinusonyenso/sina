@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const team = [
   {
@@ -46,7 +47,9 @@ export default function ServiceList() {
           href="/services"
         >
           <div className="rounded-16 height-289 overflow-hidden">
-            <img
+            <Image
+              height={100}
+              width={100}
               className="dac-parralex-effect"
               src={text.img}
               alt="Sina Consultancy skyline representing strategic global access"

@@ -1,5 +1,3 @@
-import Layout from "@/components/Layout";
-
 export default function ContactPag() {
   return (
     <>
@@ -15,8 +13,8 @@ export default function ContactPag() {
           <p className="hero-text-paragraph m-0 p-0">
             Contact Sina Consultancy for expert guidance on business
             establishment, growth strategies, and market insights. Our team is
-            ready to assist you in navigating the complexities of today's global
-            business landscape.
+            ready to assist you in navigating the complexities of today{"'"}s
+            global business landscape.
           </p>
           <p className="hero-text-paragraph m-0 p-0">
             Reach out to us via phone at +234 814 342 0528 or email us at
@@ -35,14 +33,14 @@ export default function ContactPag() {
           </h2>
           <p className="m-0 p-0 hero-text-paragraph ">
             Join a vibrant community of professionals and organizations at Sina
-            Consultancy. As a member, you'll gain exclusive access to a wealth
-            of resources, networking opportunities, and industry insights
-            designed to support your growth and success. Whether you're looking
-            to expand your professional network, enhance your skills, or stay
-            informed about the latest industry trends, Sina Consultancy offers
-            the perfect platform to achieve your goals. Don't miss out on the
-            chance to be part of a dynamic association that empowers its members
-            to thrive in today's competitive landscape.
+            Consultancy. As a member, you{"'"}ll gain exclusive access to a
+            wealth of resources, networking opportunities, and industry insights
+            designed to support your growth and success. Whether you{"'"}re
+            looking to expand your professional network, enhance your skills, or
+            stay informed about the latest industry trends, Sina Consultancy
+            offers the perfect platform to achieve your goals. Don{"'"}t miss
+            out on the chance to be part of a dynamic association that empowers
+            its members to thrive in today{"'"}s competitive landscape.
           </p>
         </div>
         <div className="flex-one flex flex-col gap-24">

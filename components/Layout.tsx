@@ -112,20 +112,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
           <ul className="menu-list">
             <li>
-              <a
+              <Link
                 className="hero-text-paragraph text-decoration-none color-white "
                 href="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="hero-text-paragraph text-decoration-none color-white "
                 href="/about"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
               <a
@@ -137,12 +137,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </li>
 
             <li>
-              <a
+              <Link
                 className="hero-text-paragraph text-decoration-none color-white "
                 href="/contact"
               >
                 contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

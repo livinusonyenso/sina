@@ -9,7 +9,7 @@ interface Props {
   link?: string;
 }
 
-export default function ServiceCard({ title, desc, imgSrc, link }: Props) {
+export default function ServiceCard({ title, imgSrc }: Props) {
   return (
     <div className="item event_card gap-24 overflow-hidden  flex flex-col position-relative ">
       <div className="h-470 event_card_img rounded-16 overflow-hidden position-relative cursor-pointer">

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import Layout from "@/components/Layout";
 
 import { Barlow } from "next/font/google";

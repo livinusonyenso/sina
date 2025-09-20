@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import AnimatedSection from "@/components/AnimatedSection";
 import SectionTitle from "@/components/SectionTitle";
 import ServiceList from "@/components/ServiceList";
 import Link from "next/link";
 import AboutCard from "@/components/AboutCard";
 import { useParallaxEffectHook } from "@/hooks/useParallaxEffectHook";
 import Buttons from "@/components/Buttons";
+import Image from "next/image";
 
 export default function Home() {
   useParallaxEffectHook(".dac-parralex-effect");
@@ -144,7 +144,9 @@ export default function Home() {
             >
               Sina Consultancy Teams
             </h3>
-            <img
+            <Image
+              height={100}
+              width={100}
               src="/assets/img-6.jpg"
               alt="Attendees networking at Sina Consultancy Conference 2025"
               className="card__image"
@@ -162,7 +164,13 @@ export default function Home() {
               aria-label="Learn more about Sina Consultancy Conference 2025"
             >
               <span className="card__icon" aria-hidden="true">
-                <img src="/assets/card-arrow.svg" role="presentation" alt="" />
+                <Image
+                  height={100}
+                  width={100}
+                  src="/assets/card-arrow.svg"
+                  role="presentation"
+                  alt=""
+                />
               </span>
             </a>
           </article>
@@ -178,7 +186,9 @@ export default function Home() {
             >
               Sina Consultancy Teams
             </h3>
-            <img
+            <Image
+              height={100}
+              width={100}
               src="/assets/dubai-skyline.png"
               alt="Attendees networking at Sina Consultancy Conference 2026"
               className="card__image"
@@ -196,7 +206,13 @@ export default function Home() {
               aria-label="Learn more about Sina Consultancy Conference 2026"
             >
               <span className="card__icon" aria-hidden="true">
-                <img src="/assets/card-arrow.svg" role="presentation" alt="" />
+                <Image
+                  height={100}
+                  width={100}
+                  src="/assets/card-arrow.svg"
+                  role="presentation"
+                  alt=""
+                />
               </span>
             </a>
           </article>
