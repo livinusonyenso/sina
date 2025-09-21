@@ -39,7 +39,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         >
           <Link
             href="/"
-            className="no-underline text-primary font-barlow fs-10 font-500 ls-08 uppercase"
+            className="no-underline text-primary font-barlow fs-14 font-500 ls-08 uppercase"
             aria-label="About DAC"
           >
             Home
@@ -47,7 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <Link
             href="/about"
-            className="no-underline text-primary font-barlow fs-10 font-500 ls-08 uppercase"
+            className="no-underline text-primary font-barlow fs-14 font-500 ls-08 uppercase"
             aria-label="About DAC"
           >
             About
@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <Link
             href="/services"
-            className="no-underline text-primary font-barlow fs-10 font-500 ls-08 uppercase"
+            className="no-underline text-primary font-barlow fs-14 font-500 ls-08 uppercase"
             aria-label="License Renewal"
           >
             Services
@@ -67,7 +67,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           >
             <Link
               href="/contact"
-              className="btn primary flex px-16 py-8 rounded-32 font-barlow fs-10 font-700 uppercase gap-10 text-center white-space-nowrap no-underline"
+              className="btn primary flex px-16 py-8 rounded-32 font-barlow fs-14 font-700 uppercase gap-10 text-center white-space-nowrap no-underline"
               aria-label="Get in Touch"
             >
               Contact
@@ -141,7 +141,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 className="hero-text-paragraph text-decoration-none color-white "
                 href="/contact"
               >
-                contact
+                Contact
               </a>
             </li>
           </ul>
@@ -170,17 +170,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             aria-label="Footer logo and contact information"
           >
             <div className="dac-footer__info">
-              <p className="cursor-pointer m-0 text-paragraph-sm color-white">
+              <p className="cursor-pointer m-0 fs-14 color-white">
                 Sina Consultancy
               </p>
-              <p className="cursor-pointer m-0 text-paragraph-sm color-white">
+              <p className="cursor-pointer m-0 fs-14 color-white">
                 Sheikh Zayed Road, Sina Consultancy
               </p>
-              <p className="cursor-pointer m-0 text-paragraph-sm color-white">
+              <p className="cursor-pointer m-0 fs-14 color-white">
                 ajibademariam5@gmail.com <br />
                 jummyo@yahoo.com
               </p>
-              <p className="cursor-pointer m-0 text-paragraph-sm color-white">
+              <p className="cursor-pointer m-0 fs-14 color-white">
                 +234 814 342 0528
               </p>
             </div>
@@ -188,7 +188,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <nav className="dac-footer__links" aria-label="Footer navigation">
             <ul className="m-0 p-0 flex flex-col gap-4">
-              <li className="list-style-none cursor-pointer m-0 text-paragraph-sm">
+              <li className="list-style-none cursor-pointer m-0 fs-14">
                 <Link
                   className="text-decoration-none color-white "
                   href="/about"
@@ -196,13 +196,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   About DAC
                 </Link>
               </li>
-              <li className="list-style-none cursor-pointer m-0 text-paragraph-sm">
+              <li className="list-style-none cursor-pointer m-0 fs-14">
                 <Link className="text-decoration-none color-white " href="/">
                   Services
                 </Link>
               </li>
 
-              <li className="list-style-none cursor-pointer m-0 text-paragraph-sm">
+              <li className="list-style-none cursor-pointer m-0 fs-14">
                 <Link
                   className="text-decoration-none color-white "
                   href="/contact"
@@ -215,12 +215,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <nav className="dac-footer__links" aria-label="Legal links">
             <ul className="p-0 flex flex-col gap-4">
-              <li className="list-style-none cursor-pointer m-0 text-paragraph-sm">
+              <li className="list-style-none cursor-pointer m-0 fs-14">
                 <Link className="text-decoration-none color-white " href="#">
                   Terms & Conditions
                 </Link>
               </li>
-              <li className="list-style-none cursor-pointer m-0 text-paragraph-sm">
+              <li className="list-style-none cursor-pointer m-0 fs-14">
                 <Link className="text-decoration-none color-white " href="#">
                   Privacy Policy
                 </Link>
@@ -250,7 +250,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 alt="Facebook icon"
               />
             </Link>
-            <Link href="#" aria-label="Twitter/X">
+            {/* <Link href="#" aria-label="Twitter/X">
               <Image
                 width={24}
                 height={24}
@@ -267,7 +267,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 role="presentation"
                 alt="YouTube icon"
               />
-            </Link>
+            </Link> */}
           </div>
         </div>
 
