@@ -4,29 +4,29 @@ import Image from "next/image";
 
 const team = [
   {
-    title: "Business Strategy",
+    title: "Business Consulting",
     description:
-      "In today's fast-evolving global marketplace, a clear and robust business strategy is paramount. At Sina Consulting Services, we specialize in crafting tailored strategies that align with your unique goals and market dynamics",
+      "Strategy Development, Analysis Consulting , Data Management, Organisational Development, Process optimisation, , Change management, Digital transformation, Credit risk advisory & compliance",
     img: "/assets/img-2.jpg",
   },
   {
-    title: "Information Technology Solutions",
+    title: "Educational Services",
     description:
-      "In an era where technology is the backbone of every successful business, Sina Consulting Services offers cutting-edge Information Technology solutions designed to propel your organization forward. ",
+      "Training & Capacity Building, Educational technology integration",
     img: "/assets/img-1.jpg",
   },
   {
-    title: "Management Consultancy",
+    title: "Ancillary Services ",
     description:
-      "Effective management is the cornerstone of organizational excellence and sustainable growth. At Sina Consulting Services, our offerings are designed to help you optimize your operations and enhance leadership capabilities",
+     "Growing businesses often encounter areas where specialized expertise is essential, yet building internal teams is not always feasible. Our ancillary services provide flexible, ondemand support to help you navigate challenges, make data-informed decisions, and drive growth with the right guidance at the right time",
     img: "/assets/img-5.jpg",
   },
-  {
-    title: "Professional Education",
-    description:
-      "Continuous learning is a strategic advantage in today's dynamic business environment. At Sina Consulting Services, we are committed to empowering individuals and organizations.",
-    img: "/assets/img-4.jpg",
-  },
+  // {
+  //   title: "Professional Education",
+  //   description:
+  //     "Continuous learning is a strategic advantage in today's dynamic business environment. At Sina Consulting Services, we are committed to empowering individuals and organizations.",
+  //   img: "/assets/img-4.jpg",
+  // },
 ];
 
 export default function ServiceList() {

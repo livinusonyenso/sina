@@ -61,7 +61,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             Services
           </Link>
 
-          <div
+          {/* <div
             className="header-buttons flex gap-16 items-center"
             aria-label="Header action buttons"
           >
@@ -70,9 +70,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               className="btn primary flex px-16 py-8 rounded-32 font-barlow fs-14 font-700 uppercase gap-10 text-center white-space-nowrap no-underline"
               aria-label="Get in Touch"
             >
-              Contact
+              Careers
             </Link>
-          </div>
+          </div> */}
+          <Link
+            href="/contact"
+            className="no-underline text-primary font-barlow fs-14 font-500 ls-08 uppercase"
+            aria-label="License Renewal"
+          >
+            Career
+          </Link>
+          <Link
+            href="#"
+            className="no-underline text-primary font-barlow fs-14 font-500 ls-08 uppercase"
+            aria-label="License Renewal"
+          >
+            Our People
+          </Link>
         </nav>
 
         <div

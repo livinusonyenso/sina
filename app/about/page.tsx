@@ -36,15 +36,21 @@ export default function About() {
 
         <div className="flex-one flex flex-col gap-24">
           <p className="hero-text-paragraph p-0 m-0">
-            Sina Consultancy is a global IT consulting company that specializes
-            in delivering innovative technology solutions to businesses
-            worldwide. With a team of experienced professionals, we provide
-            strategic consulting, system integration, and managed services to
-            help our clients achieve their digital transformation goals. Our
-            expertise spans across various industries, including finance,
-            healthcare, retail, and manufacturing. At Sina Consultancy, we are
-            committed to driving business growth through cutting-edge technology
-            and exceptional customer service.
+          Sina Consulting Services was founded with a clear purpose: to help organisations address
+complex challenges with precision, insight, and integrity. We bring together expertise in
+Business consulting in the areas of Management consulting, Analytics consulting, Credit risk
+advisory, and Trainings to deliver strategies that are both rigorous and actionable. By
+applying structured analysis, proven methodologies, and forward-thinking perspectives, we
+enable clients to achieve measurable outcomes and sustained competitive advantage.
+Our philosophy is rooted in partnership and trust. We work closely with clients to understand
+their unique contexts and priorities, ensuring that the solutions we deliver are tailored,
+practical, and sustainable. Transparency and objectivity guide every engagement, allowing
+us to provide advice that is both trusted and transformative.
+With a diverse team of professionals drawn from consulting, industry, and academia, we
+combine technical expertise with real-world experience. This multidisciplinary approach
+allows us to deliver insights that are not only strategic but also operationally effective. As
+industries and technologies continue to evolve, we remain agile and committed to innovation,
+ensuring our clients are always positioned to succeed in a rapidly changing environment.
           </p>
           <p className="hero-text-paragraph p-0 m-0">
             Our mission is to empower organizations with the right technology

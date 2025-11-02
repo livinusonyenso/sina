@@ -54,7 +54,7 @@ Below, you'll find a detailed overview of the core services that define Sina Con
         aria-labelledby="community-heading"
       >
         <h2 id="community-heading" className="flex-one hero-text-heading">
-          Business Strategy
+         Business Consulting
         </h2>
 
         <div className="flex-2 flex flex-col gap-24">
@@ -63,7 +63,7 @@ Below, you'll find a detailed overview of the core services that define Sina Con
           </h3>
           <p className="hero-text-paragraph m-0">
             In today fast-evolving global marketplace, a clear and robust
-            business strategy is the foundation of lasting success. At Sina
+            Business Consulting is the foundation of lasting success. At Sina
             Consulting Services , we partner with organizations to craft
             strategies that are not only visionary but also actionable and
             resilient.
@@ -155,7 +155,7 @@ Below, you'll find a detailed overview of the core services that define Sina Con
         aria-labelledby="community-heading"
       >
         <h2 id="community-heading" className="flex-one hero-text-heading">
-          Information Technology Solutions
+          Ancillary Services
         </h2>
 
         <div className="flex-2 flex flex-col gap-24">
@@ -268,7 +268,7 @@ Below, you'll find a detailed overview of the core services that define Sina Con
         </div>
       </section>
 
-      <section
+      {/* <section
         className="flex gap-24 mt-80 flex-wrap"
         aria-labelledby="community-heading"
       >
@@ -377,14 +377,14 @@ Below, you'll find a detailed overview of the core services that define Sina Con
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
 
       <section
         className="flex gap-24 mt-80 flex-wrap"
         aria-labelledby="community-heading"
       >
         <h2 id="community-heading" className="flex-one hero-text-heading">
-          Professional Education
+      Educational Services
         </h2>
 
         <div className="flex-2 flex flex-col gap-24">
