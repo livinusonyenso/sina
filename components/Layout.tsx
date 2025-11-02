@@ -19,16 +19,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         aria-label="Main site header"
       >
         <div
-          className="logo-container flex items-center gap-12"
+          className="logo-container flex items-center gap-12 ]"
           aria-label="Sina Consultancy logo"
         >
           <Link href="/" className="no-underline">
             <Image
               width={100}
               height={100}
-              src="/assets/logo-bg.png"
+              src="/assets/Logoimg.png"
               alt="Sina Consultancy logo"
-              className="logo"
+              className="logo scale-110 md:scale-125 transition-transform duration-300"
             />
           </Link>
         </div>
@@ -175,7 +175,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Image
             width={100}
             height={100}
-            src="/assets/logo-bg.png"
+            src="/assets/Logoimg.png"
             alt="Sina Consultancy Logo"
           />
 
