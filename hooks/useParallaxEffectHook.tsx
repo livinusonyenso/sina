@@ -4,7 +4,7 @@ export function useParallaxEffectHook(
   className: string = ".dac-parralex-effect"
 ) {
   const tickingRef = useRef(false);
-  var vh = 0;
+  let vh = 0;
   if (typeof window !== "undefined") {
     vh = window.innerHeight;
   }

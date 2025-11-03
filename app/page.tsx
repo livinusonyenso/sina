@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import SectionTitle from "@/components/SectionTitle";
 import ServiceList from "@/components/ServiceList";
 import Link from "next/link";
@@ -7,9 +7,8 @@ import AboutCard from "@/components/AboutCard";
 import { useParallaxEffectHook } from "@/hooks/useParallaxEffectHook";
 import Buttons from "@/components/Buttons";
 import Image from "next/image";
-import { useState } from "react";
 
-function ReadMoreText({ text }: { text: string }) {
+function ReadMoreText({ text, url }: { text: string; url: string }) {
   const [expanded, setExpanded] = React.useState(false);
   const preview = text.slice(0, 180);
 
@@ -17,9 +16,12 @@ function ReadMoreText({ text }: { text: string }) {
     <p className="m-0 card__description">
       {expanded ? text : `${preview}... `}
       <button
+        // onClick={(e) => {
+        //   setExpanded(!expanded);
+        // }}
         onClick={(e) => {
-          e.stopPropagation(); // prevent opening LinkedIn
-          setExpanded(!expanded);
+          e.stopPropagation();
+          window.open(url);
         }}
         className="text-[#007f3b] font-semibold text-sm hover:underline bg-transparent border-none"
         style={{ cursor: "pointer" }}
@@ -30,41 +32,9 @@ function ReadMoreText({ text }: { text: string }) {
   );
 }
 
-
 export default function Home() {
   useParallaxEffectHook(".dac-parralex-effect");
-    const [expanded, setExpanded] = useState<number | null>(null);
-
-  const toggleExpand = (id: number) => {
-    setExpanded(expanded === id ? null : id);
-  };
-const teamMembers = [
-  {
-    id: 1,
-    name: "Olufunmilayo Olanrewaju",
-    title: "Founder",
-    image: "/assets/img-6.jpg",
-    linkedin: "https://www.linkedin.com/in/funmilayo-olanrewaju-x/",
-    description: `Olufunmilayo, the founder of Sina Consulting Services, is a dynamic business
-    leader with over 20+ years of versatile experience covering credit analysis, financial
-    modeling, business analysis and project management across banking and financial services.
-    She has a track record of driving data-driven strategies, optimizing risk frameworks,
-    and delivering actionable insights that enhance decision-making and business performance.`,
-  },
-  {
-    id: 2,
-    name: "Mariam Ajibade",
-    title: "Cofounder",
-    image: "/assets/img-6.jpg",
-    linkedin: "http://linkedin.com/in/mariam-ajibade",
-    description: `Mariam Ajibade is the Cofounder of Sina Consulting Services with a proven record
-    of leading projects that deliver measurable business results. She has guided initiatives
-    across business development, data analysis, and customer operations, combining strategic
-    insight with practical execution. At Sina Consulting Services, Mariam applies this diverse
-    project experience to help organisations rethink strategy, optimise operations, and adapt to
-    change, ensuring clients achieve long-term success.`,
-  },
-];
+  useEffect(() => {});
 
   return (
     <>
@@ -177,106 +147,107 @@ const teamMembers = [
         </div>
       </section>
 
-  <section
-  className="events mt-120 mobile-flex-wrap"
-  aria-label="Upcoming events and conferences"
->
-  <div className="events__left flex-one">
-    <h2 className="events__title hero-text-heading text-end">
-      Our People <br />
-    </h2>
-  </div>
-
-  <div
-    className="events__center dac-transition-Y"
-    style={{ opacity: 1, visibility: "visible", transform: "none" }}
-  >
-    {/* Card 1 */}
-    <article
-      id="card1"
-      className="events_card card--stacked active"
-      aria-labelledby="event-title-2025"
-      onClick={() =>
-        window.open(
-          "https://www.linkedin.com/in/funmilayo-olanrewaju-x/",
-          "_blank"
-        )
-      }
-      style={{ cursor: "pointer" }}
-    >
-      <h3
-        id="event-title-2025"
-        className="card__title text-heading-md m-0"
+      <section
+        className="events mt-120 mobile-flex-wrap"
+        aria-label="Upcoming events and conferences"
       >
-        Sina Consultancy Teams
-      </h3>
-      <Image
-        height={100}
-        width={100}
-        src="/assets/img-6.jpg"
-        alt="Attendees networking at Sina Consultancy Conference 2025"
-        className="card__image"
-      />
-      <p className="m-0 card__date" aria-label="Event Date: July 2025">
-        Olufunmilayo Olanrewaju Founder
-      </p>
+        <div className="events__left flex-one">
+          <h2 className="events__title hero-text-heading text-end">
+            Our People <br />
+          </h2>
+        </div>
 
-      {/* Description with read more toggle */}
-      <ReadMoreText
-        text={`Olufunmilayo, the founder of Sina Consulting Services, is a dynamic business
+        <div
+          className="events__center dac-transition-Y"
+          style={{ opacity: 1, visibility: "visible", transform: "none" }}
+        >
+          {/* Card 1 */}
+          <article
+            id="card1"
+            className="events_card card--stacked active"
+            aria-labelledby="event-title-2025"
+            // onClick={() =>
+            //   window.open(
+            //     "https://www.linkedin.com/in/funmilayo-olanrewaju-x/",
+            //     "_blank"
+            //   )
+            // }
+            style={{ cursor: "pointer" }}
+          >
+            <h3
+              id="event-title-2025"
+              className="card__title text-heading-md m-0"
+            >
+              Sina Consultancy Teams
+            </h3>
+            <Image
+              height={100}
+              width={100}
+              src="/assets/img-6.jpg"
+              alt="Attendees networking at Sina Consultancy Conference 2025"
+              className="card__image"
+            />
+            <p className="m-0 card__date" aria-label="Event Date: July 2025">
+              Olufunmilayo Olanrewaju Founder
+            </p>
+
+            {/* Description with read more toggle */}
+            <ReadMoreText
+              text={`Olufunmilayo, the founder of Sina Consulting Services, is a dynamic business
         leader with over 20+ years of versatile experience covering credit analysis,
         financial modeling, business analysis and project management across banking
         and financial services. She has a track record of driving data-driven strategies,
         optimizing risk frameworks, and delivering actionable insights that enhance
         decision-making and business performance.`}
-      />
+              url="https://www.linkedin.com/in/funmilayo-olanrewaju-x/"
+            />
 
-      <a
-        href="#"
-        className="card__link"
-        aria-label="Learn more about Sina Consultancy Conference 2025"
-      >
-        <span className="card__icon" aria-hidden="true">
-          <Image
-            height={16}
-            width={16}
-            src="/assets/card-arrow.svg"
-            role="presentation"
-            alt=""
-          />
-        </span>
-      </a>
-    </article>
+            <a
+              // href="#"
+              className="card__link"
+              aria-label="Learn more about Sina Consultancy Conference 2025"
+            >
+              <span className="card__icon" aria-hidden="true">
+                <Image
+                  height={16}
+                  width={16}
+                  src="/assets/card-arrow.svg"
+                  role="presentation"
+                  alt=""
+                />
+              </span>
+            </a>
+          </article>
 
-    {/* Card 2 */}
-    <article
-      id="card2"
-      className="events_card card--stacked"
-      aria-labelledby="event-title-2026"
-      onClick={() =>
-        window.open("http://linkedin.com/in/mariam-ajibade", "_blank")
-      }
-      style={{ cursor: "pointer" }}
-    >
-      <h3
-        id="event-title-2026"
-        className="card__title text-heading-md m-0"
-      >
-        Sina Consultancy Teams
-      </h3>
-      <Image
-        height={100}
-        width={100}
-        src="/assets/img-6.jpg"
-        alt="Attendees networking at Sina Consultancy Conference 2026"
-        className="card__image"
-      />
-      <p className="m-0 card__date" aria-label="Event Date: July 2026">
-        Mariam Ajibade Cofounder
-      </p>
+          {/* Card 2 */}
+          <article
+            id="card2"
+            className="events_card card--stacked"
+            aria-labelledby="event-title-2026"
+            // onClick={() =>
+            //   window.open("http://linkedin.com/in/mariam-ajibade", "_blank")
+            // }
+            style={{ cursor: "pointer" }}
+          >
+            <h3
+              id="event-title-2026"
+              className="card__title text-heading-md m-0"
+            >
+              Sina Consultancy Teams
+            </h3>
+            <Image
+              height={100}
+              width={100}
+              src="/assets/img-6.jpg"
+              alt="Attendees networking at Sina Consultancy Conference 2026"
+              className="card__image"
+            />
+            <p className="m-0 card__date" aria-label="Event Date: July 2026">
+              Mariam Ajibade Cofounder
+            </p>
 
-      <ReadMoreText
-        text={`Mariam Ajibade is the Cofounder of Sina Consulting Services with a proven record
+            <ReadMoreText
+              text={`Mariam Ajibade is the Cofounder of Sina Consulting Services with a proven record
         of leading projects that deliver measurable business results. She has guided
         initiatives across business development, data analysis, and customer operations,
         combining strategic insight with practical execution. At Sina Consulting Services,
@@ -284,43 +255,43 @@ const teamMembers = [
         strategy, optimise operations, and adapt to change. Her approach balances
         analytical rigour with a focus on sustainable outcomes, ensuring clients are
         equipped to achieve long-term success.`}
-      />
+              url="http://linkedin.com/in/mariam-ajibade"
+            />
 
-      <a
-        href="#"
-        className="card__link"
-        aria-label="Learn more about Sina Consultancy Conference 2026"
-      >
-        <span className="card__icon" aria-hidden="true">
-          <Image
-            height={16}
-            width={16}
-            src="/assets/card-arrow.svg"
-            role="presentation"
-            alt=""
-          />
-        </span>
-      </a>
-    </article>
-  </div>
+            <a
+              // href="#"
+              className="card__link"
+              aria-label="Learn more about Sina Consultancy Conference 2026"
+            >
+              <span className="card__icon" aria-hidden="true">
+                <Image
+                  height={16}
+                  width={16}
+                  src="/assets/card-arrow.svg"
+                  role="presentation"
+                  alt=""
+                />
+              </span>
+            </a>
+          </article>
+        </div>
 
-  <div className="events__right flex-one">
-    <p className="m-0 events__description">
-      As a DAC member, your association gains exclusive access to
-      networking events, workshops, and industry forums. Engage with other
-      associations, share knowledge, and explore new collaboration
-      opportunities that help drive your mission forward.
-    </p>
-    <a
-      href="#"
-      className="dac-btn outline"
-      aria-label="View all upcoming events at Sina Consultancy"
-    >
-      Contact Us
-    </a>
-  </div>
-</section>
-
+        <div className="events__right flex-one">
+          <p className="m-0 events__description">
+            As a DAC member, your association gains exclusive access to
+            networking events, workshops, and industry forums. Engage with other
+            associations, share knowledge, and explore new collaboration
+            opportunities that help drive your mission forward.
+          </p>
+          <a
+            href="#"
+            className="dac-btn outline"
+            aria-label="View all upcoming events at Sina Consultancy"
+          >
+            Contact Us
+          </a>
+        </div>
+      </section>
 
       {/* </AnimatedSection> */}
     </>

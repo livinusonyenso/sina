@@ -124,30 +124,34 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   if (window !== undefined) {
-    document.querySelectorAll("section").forEach((sec) => {
-      sec.classList.add("fade-in-section");
-      observer.observe(sec);
-    });
+    setTimeout(() => {
+      document.querySelectorAll("section").forEach((sec) => {
+        sec.classList.add("fade-in-section");
+        observer.observe(sec);
+      });
+    }, 5000);
   }
 
   // Card carousel functionality
 
-  document.querySelectorAll(".card__link").forEach((link) => {
-    link.addEventListener("click", (e) => {
-      console.log(link);
-      e.preventDefault();
-      // Remove active class from current card
-      cards[activeIndex].classList.remove("active");
-      cards[activeIndex].classList.add("behind");
+  setTimeout(() => {
+    document.querySelectorAll(".card__link").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        console.log(link);
+        e.preventDefault();
+        // Remove active class from current card
+        cards[activeIndex].classList.remove("active");
+        cards[activeIndex].classList.add("behind");
 
-      // Move to next card
-      activeIndex = (activeIndex + 1) % cards.length;
+        // Move to next card
+        activeIndex = (activeIndex + 1) % cards.length;
 
-      // Show next card
-      cards[activeIndex].classList.add("active");
-      cards[activeIndex].classList.remove("behind");
+        // Show next card
+        cards[activeIndex].classList.add("active");
+        cards[activeIndex].classList.remove("behind");
+      });
     });
-  });
+  }, 4000);
 
   // Video play button functionality
   const video = document.getElementById("myVideo");
