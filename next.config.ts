@@ -1,11 +1,11 @@
+/** @type {import('next').NextConfig} */
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // output: 'export',
-  output: "export", 
-  trailingSlash: true,
+  output: "export", // ✅ replaces next export
+  trailingSlash: true, // ✅ recommended for static hosting
   images: {
-    unoptimized: true,
+    unoptimized: true, // ✅ required when exporting static HTML without Image Optimization
   },
 };
 
