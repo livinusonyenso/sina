@@ -63,7 +63,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             aria-label="Services"
           >
             <span>Services</span>
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-3 h-3 mt-[2px]"
               fill="none"
@@ -76,7 +76,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 strokeLinejoin="round"
                 d="M19 9l-7 7-7-7"
               />
-            </svg>
+            </svg> */}
           </Link>
 
           <Link
@@ -185,7 +185,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <>
                   <li>
                     <a
-                      href="/services"
+                      href="/services/business-consulting"
                       className="ero-text-paragraph text-decoration-none color-white"
                     >
                       Business Consulting
@@ -194,7 +194,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
                   <li>
                     <a
-                      href="/services"
+                      href="/services/educational-services"
                       className="ero-text-paragraph text-decoration-none color-white"
                     >
                       Educational Services
@@ -203,7 +203,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
                   <li>
                     <a
-                      href="/services"
+                      href="/services/ancillary-services"
                       className="ero-text-paragraph text-decoration-none color-white"
                     >
                       Ancillary Services

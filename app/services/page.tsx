@@ -1,5 +1,6 @@
 "use client";
 import SectionTitle from "@/components/SectionTitle";
+import Link from "next/link";
 // import useOwlCarouselHook, {
 //   owlConfig_two_and_half_box,
 // } from "@/hooks/useOwlCarouselHook";
@@ -66,45 +67,19 @@ export default function Services() {
             you navigate challenges, make data-informed decisions, and drive
             growth with the right guidance at the right time
           </p>
-        </div>
-      </section>
-
-      <section
-        className="flex gap-24 mt-80 flex-wrap"
-        aria-labelledby="community-heading"
-      >
-        <h2 id="community-heading" className="flex-one hero-text-heading">
-          Ancillary Services
-        </h2>
-
-        <div className="flex-2 flex flex-col gap-24">
-          <p className="hero-text-paragraph m-0">
-            Growing businesses often encounter areas where specialized expertise
-            is essential, yet building internal teams is not always feasible.
-            Our ancillary services provide flexible, on demand support to help
-            you navigate challenges, make data-informed decisions, and drive
-            growth with the right guidance at the right time
-          </p>
-
-          <ul>
-            <li className="mb-2">
-              <b>- Technology Advisory:</b>
-              <p className="hero-text-paragraph">
-                Our Technology Advisory service helps businesses make strategic
-                decisions about the tools, platforms, and systems that support
-                growth and efficiency. We guide you in selecting software that
-                fits your operations and future plans, ensure your systems work
-                seamlessly together, and provide advice on building technology
-                that can scale with your business. We also share insights into
-                emerging technologies and innovations that can create
-                competitive advantages. Technology Advisory bridges the gap
-                between knowing you need technology and having the expertise to
-                implement it effectively, giving you guidance without the need
-                for full-time internal experts
-              </p>
-            </li>
-          </ul>
-          <p className="hero-text-paragraph m-0"></p>
+          <Link
+            href={"/services/business-consulting"}
+            style={{
+              borderRadius: "12px",
+              backgroundColor: "#0d2743",
+              color: "#fff",
+              width: "max-content",
+              fontWeight: "bolder",
+              padding: "12px",
+            }}
+          >
+            Learn More
+          </Link>
         </div>
       </section>
 
@@ -137,6 +112,20 @@ export default function Services() {
             foundational skills, advanced technical training, leadership
             development, and industry certifications.
           </p>
+
+          <Link
+            href={"/services/educational-services"}
+            style={{
+              borderRadius: "12px",
+              backgroundColor: "#0d2743",
+              color: "#fff",
+              width: "max-content",
+              fontWeight: "bolder",
+              padding: "12px",
+            }}
+          >
+            Learn More
+          </Link>
 
           {/* <h4 id="community-heading" className="flex-one hero-text-heading">
             What We Offer
@@ -209,6 +198,58 @@ export default function Services() {
               </p>
             </li>
           </ul> */}
+        </div>
+      </section>
+
+      <section
+        className="flex gap-24 mt-80 flex-wrap"
+        aria-labelledby="community-heading"
+      >
+        <h2 id="community-heading" className="flex-one hero-text-heading">
+          Ancillary Services
+        </h2>
+
+        <div className="flex-2 flex flex-col gap-24">
+          <p className="hero-text-paragraph m-0">
+            Growing businesses often encounter areas where specialized expertise
+            is essential, yet building internal teams is not always feasible.
+            Our ancillary services provide flexible, on demand support to help
+            you navigate challenges, make data-informed decisions, and drive
+            growth with the right guidance at the right time
+          </p>
+
+          <ul>
+            <li className="mb-2">
+              <b>- Technology Advisory:</b>
+              <p className="hero-text-paragraph">
+                Our Technology Advisory service helps businesses make strategic
+                decisions about the tools, platforms, and systems that support
+                growth and efficiency. We guide you in selecting software that
+                fits your operations and future plans, ensure your systems work
+                seamlessly together, and provide advice on building technology
+                that can scale with your business. We also share insights into
+                emerging technologies and innovations that can create
+                competitive advantages. Technology Advisory bridges the gap
+                between knowing you need technology and having the expertise to
+                implement it effectively, giving you guidance without the need
+                for full-time internal experts
+              </p>
+            </li>
+          </ul>
+          <p className="hero-text-paragraph m-0"></p>
+          <Link
+            href={"/services/ancillary-services"}
+            style={{
+              borderRadius: "12px",
+              backgroundColor: "#0d2743",
+              color: "#fff",
+              width: "max-content",
+              fontWeight: "bolder",
+              padding: "12px",
+            }}
+          >
+            Learn More
+          </Link>
         </div>
       </section>
 
