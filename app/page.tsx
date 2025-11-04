@@ -79,7 +79,7 @@ export default function Home() {
 
       <SectionTitle
         heading="Sina Consultancy"
-        paragraph="At Sina Consulting Services, we empower organizations and individuals to achieve their full potential. Specializing in business, information technology, and management consultancy, as well as educational services, we deliver tailored solutions that drive growth, efficiency, and innovation. Partner with us to unlock new opportunities and elevate your success."
+        paragraph="At Sina Consulting Services, we empower organizations and individuals to achieve their full potential. Specializing in business, trainings, and management consultancy, as well as educational services, we deliver tailored solutions that drive growth, efficiency, and innovation. Partner with us to unlock new opportunities and elevate your success."
         ctaText="Learn More"
         href="/about"
         showCta={true}
@@ -103,7 +103,7 @@ export default function Home() {
 
       <SectionTitle
         heading="Our Services"
-        paragraph="At Sina Consulting Services, we are passionate about driving progress for businesses, organizations, and individuals. Our comprehensive suite of services—spanning business strategy, information technology solutions, management consultancy, and professional education—is rooted in a deep understanding ......."
+        paragraph="At Sina Consulting Services, we are passionate about driving progress for businesses, organizations, and individuals. Our comprehensive suite of services—spanning business strategy solutions, management consultancy, and professional education—is rooted in a deep understanding ......."
       />
 
       <ServiceList />
@@ -150,6 +150,7 @@ export default function Home() {
       <section
         className="events mt-120 mobile-flex-wrap"
         aria-label="Upcoming events and conferences"
+        id="our-people"
       >
         <div className="events__left flex-one">
           <h2 className="events__title hero-text-heading text-end">
@@ -180,13 +181,13 @@ export default function Home() {
             >
               Sina Consultancy Teams
             </h3>
-            <Image
+            {/* <Image
               height={100}
               width={100}
               src="/assets/img-6.jpg"
               alt="Attendees networking at Sina Consultancy Conference 2025"
               className="card__image"
-            />
+            /> */}
             <p className="m-0 card__date" aria-label="Event Date: July 2025">
               Olufunmilayo Olanrewaju Founder
             </p>
@@ -203,7 +204,7 @@ export default function Home() {
             />
 
             <a
-              // href="#"
+              style={{ zIndex: 100 }}
               className="card__link"
               aria-label="Learn more about Sina Consultancy Conference 2025"
             >
@@ -235,13 +236,13 @@ export default function Home() {
             >
               Sina Consultancy Teams
             </h3>
-            <Image
+            {/* <Image
               height={100}
               width={100}
               src="/assets/img-6.jpg"
               alt="Attendees networking at Sina Consultancy Conference 2026"
               className="card__image"
-            />
+            /> */}
             <p className="m-0 card__date" aria-label="Event Date: July 2026">
               Mariam Ajibade Cofounder
             </p>
@@ -262,6 +263,7 @@ export default function Home() {
               // href="#"
               className="card__link"
               aria-label="Learn more about Sina Consultancy Conference 2026"
+              style={{ zIndex: 100 }}
             >
               <span className="card__icon" aria-hidden="true">
                 <Image
@@ -278,13 +280,13 @@ export default function Home() {
 
         <div className="events__right flex-one">
           <p className="m-0 events__description">
-            As a DAC member, your association gains exclusive access to
-            networking events, workshops, and industry forums. Engage with other
+            As a Sina member, your business gains exclusive access to networking
+            events, workshops, and industry forums. Engage with other
             associations, share knowledge, and explore new collaboration
             opportunities that help drive your mission forward.
           </p>
           <a
-            href="#"
+            href="/contact"
             className="dac-btn outline"
             aria-label="View all upcoming events at Sina Consultancy"
           >

@@ -1,8 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isServiceOpen, setIsServiceOpen] = useState(false);
+
   return (
     <>
       <Link
@@ -54,25 +58,27 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </Link>
 
           <Link
-            href="/services"
-            className="no-underline text-primary font-barlow fs-14 font-500 ls-08 uppercase"
-            aria-label="License Renewal"
+            href={"/services"}
+            className="no-underline text-primary font-barlow fs-14 font-500 ls-08 uppercase flex items-center gap-1"
+            aria-label="Services"
           >
-            Services
+            <span>Services</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-3 h-3 mt-[2px]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
           </Link>
 
-          {/* <div
-            className="header-buttons flex gap-16 items-center"
-            aria-label="Header action buttons"
-          >
-            <Link
-              href="/contact"
-              className="btn primary flex px-16 py-8 rounded-32 font-barlow fs-14 font-700 uppercase gap-10 text-center white-space-nowrap no-underline"
-              aria-label="Get in Touch"
-            >
-              Careers
-            </Link>
-          </div> */}
           <Link
             href="/contact"
             className="no-underline text-primary font-barlow fs-14 font-500 ls-08 uppercase"
@@ -81,7 +87,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             Career
           </Link>
           <Link
-            href="#"
+            href="#our-people"
             className="no-underline text-primary font-barlow fs-14 font-500 ls-08 uppercase"
             aria-label="License Renewal"
           >
@@ -97,6 +103,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           aria-expanded="false"
           aria-controls="mobileMenu"
           id="hamburgerBtn"
+          onClick={() => setIsOpen(true)}
         >
           <Image
             width={24}
@@ -107,59 +114,108 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           />
         </div>
 
-        <nav
-          className="mobile-menu"
-          id="mobileMenu"
-          aria-label="Mobile navigation"
-          role="navigation"
-          aria-hidden="true"
-        >
-          <div className="menu-header">
-            <div
-              className="menu-close"
-              aria-label="Close menu"
-              role="button"
-              tabIndex={0}
-            >
-              ✕
+        {isOpen && (
+          <nav
+            className="mobile-menu open"
+            id="mobileMenu"
+            aria-label="Mobile navigation"
+            role="navigation"
+            aria-hidden="true"
+          >
+            <div className="menu-header">
+              <div
+                className="menu-close"
+                aria-label="Close menu"
+                role="button"
+                tabIndex={0}
+                onClick={() => setIsOpen(false)}
+              >
+                ✕
+              </div>
             </div>
-          </div>
-          <ul className="menu-list">
-            <li>
-              <Link
-                className="hero-text-paragraph text-decoration-none color-white "
-                href="/"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <a
-                className="hero-text-paragraph text-decoration-none color-white "
-                href="/about"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                className="hero-text-paragraph text-decoration-none color-white "
-                href="/services"
-              >
-                Services
-              </a>
-            </li>
+            <ul className="menu-list">
+              <li>
+                <Link
+                  className="hero-text-paragraph text-decoration-none color-white "
+                  href="/"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <a
+                  className="hero-text-paragraph text-decoration-none color-white "
+                  href="/about"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <button
+                  className="no-underline text-white font-barlow fs-14 font-500 ls-08   gap-1"
+                  aria-label="Services"
+                  style={{ justifyContent: "space-between", display: "flex", width: "100%", alignItems: "center" }}
+                  onClick={() => setIsServiceOpen(!isServiceOpen)}
+                >
+                  <span>Services</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-3 h-3 mt-[2px]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+              </li>
 
-            <li>
-              <a
-                className="hero-text-paragraph text-decoration-none color-white "
-                href="/contact"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+              {isServiceOpen && (
+                <>
+                  <li>
+                    <Link
+                      href="/services"
+                      className="ero-text-paragraph text-decoration-none color-white"
+                    >
+                      Business Consulting
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services"
+                      className="ero-text-paragraph text-decoration-none color-white"
+                    >
+                      Ancillary Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/services"
+                      className="ero-text-paragraph text-decoration-none color-white"
+                    >
+                      Educational Services≈
+                    </Link>
+                  </li>
+                </>
+              )}
+
+              <li>
+                <a
+                  className="hero-text-paragraph text-decoration-none color-white "
+                  href="/contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        )}
       </header>
 
       <main className="min-h-[82vh]" role="main" id="dac-main-content">

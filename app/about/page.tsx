@@ -31,26 +31,32 @@ export default function About() {
         aria-labelledby="community-heading"
       >
         <h2 id="community-heading" className="flex-one hero-text-heading">
-          About Sina Consultancy
+          About Sina
         </h2>
 
         <div className="flex-one flex flex-col gap-24">
           <p className="hero-text-paragraph p-0 m-0">
-          Sina Consulting Services was founded with a clear purpose: to help organisations address
-complex challenges with precision, insight, and integrity. We bring together expertise in
-Business consulting in the areas of Management consulting, Analytics consulting, Credit risk
-advisory, and Trainings to deliver strategies that are both rigorous and actionable. By
-applying structured analysis, proven methodologies, and forward-thinking perspectives, we
-enable clients to achieve measurable outcomes and sustained competitive advantage.
-Our philosophy is rooted in partnership and trust. We work closely with clients to understand
-their unique contexts and priorities, ensuring that the solutions we deliver are tailored,
-practical, and sustainable. Transparency and objectivity guide every engagement, allowing
-us to provide advice that is both trusted and transformative.
-With a diverse team of professionals drawn from consulting, industry, and academia, we
-combine technical expertise with real-world experience. This multidisciplinary approach
-allows us to deliver insights that are not only strategic but also operationally effective. As
-industries and technologies continue to evolve, we remain agile and committed to innovation,
-ensuring our clients are always positioned to succeed in a rapidly changing environment.
+            Sina Consulting Services was founded with a clear purpose: to help
+            organisations address complex challenges with precision, insight,
+            and integrity. We bring together expertise in Business consulting in
+            the areas of Management consulting, Analytics consulting, Credit
+            risk advisory, and Trainings to deliver strategies that are both
+            rigorous and actionable. By applying structured analysis, proven
+            methodologies, and forward-thinking perspectives, we enable clients
+            to achieve measurable outcomes and sustained competitive advantage.
+            Our philosophy is rooted in partnership and trust. We work closely
+            with clients to understand their unique contexts and priorities,
+            ensuring that the solutions we deliver are tailored, practical, and
+            sustainable. Transparency and objectivity guide every engagement,
+            allowing us to provide advice that is both trusted and
+            transformative. With a diverse team of professionals drawn from
+            consulting, industry, and academia, we combine technical expertise
+            with real-world experience. This multidisciplinary approach allows
+            us to deliver insights that are not only strategic but also
+            operationally effective. As industries and technologies continue to
+            evolve, we remain agile and committed to innovation, ensuring our
+            clients are always positioned to succeed in a rapidly changing
+            environment.
           </p>
           <p className="hero-text-paragraph p-0 m-0">
             Our mission is to empower organizations with the right technology
@@ -95,7 +101,7 @@ ensuring our clients are always positioned to succeed in a rapidly changing envi
         ></article>
       </section>
 
-      <section
+      {/* <section
         className="flex gap-24 mt-80 flex-wrap"
         aria-labelledby="community-heading"
       >
@@ -117,7 +123,7 @@ ensuring our clients are always positioned to succeed in a rapidly changing envi
             and achieve their business objectives.
           </p>
         </div>
-      </section>
+      </section> */}
 
       <section
         className="flex gap-24 mt-80 flex-wrap mobile-flex-wrap"

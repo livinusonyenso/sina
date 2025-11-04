@@ -93,19 +93,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Mobile menu toggle
 
-  hamburger.addEventListener("click", () => {
-    mobileMenu.classList.add("open");
-    document.body.classList.add("no-scroll");
-  });
+  if (mobileMenu) {
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.add("open");
+      document.body.classList.add("no-scroll");
+    });
+  }
 
-  closeButton.addEventListener("click", () => {
-    mobileMenu.classList.remove("open");
-    document.body.classList.remove("no-scroll");
-  });
+  if (closeButton) {
+    closeButton.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+      document.body.classList.remove("no-scroll");
+    });
+  }
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-      mobileMenu.classList.remove("open");
+      mobileMenu?.classList.remove("open");
     }
   });
 
@@ -136,8 +140,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
     document.querySelectorAll(".card__link").forEach((link) => {
+      console.log(link);
       link.addEventListener("click", (e) => {
-        console.log(link);
         e.preventDefault();
         // Remove active class from current card
         cards[activeIndex].classList.remove("active");
@@ -151,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cards[activeIndex].classList.remove("behind");
       });
     });
-  }, 4000);
+  }, 6000);
 
   // Video play button functionality
   const video = document.getElementById("myVideo");
