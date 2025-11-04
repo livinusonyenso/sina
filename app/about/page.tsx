@@ -73,7 +73,7 @@ export default function About() {
             href="/contact"
             className="dac-btn outline"
             role="button"
-            aria-label="Learn more about Sina Consultancy"
+            aria-label="Learn more about Sina"
           >
             Contact us
           </Link>
@@ -82,7 +82,7 @@ export default function About() {
 
       <section
         className="action-cards mt-80 gap-24"
-        aria-label="Actions to register or scale your association in Sina Consultancy"
+        aria-label="Actions to register or scale your association in Sina"
       >
         <article className="card dark-card h-360 height-fit-content dac-zoom-in">
           <div className="card-content p-40">
@@ -97,7 +97,7 @@ export default function About() {
 
         <article
           className="card image-card  h-360 height-fit-content dac-zoom-in bg-building "
-          aria-label="Scale your association to Sina Consultancy, card with background image of Sina Consultancy skyline"
+          aria-label="Scale your association to Sina, card with background image of Sina skyline"
         ></article>
       </section>
 
@@ -111,7 +111,7 @@ export default function About() {
 
         <div className="flex-one">
           <p className="p-0 m-0 hero-text-paragraph">
-            Founded in 2005, Sina Consultancy has grown from a small startup to
+            Founded in 2005, Sina has grown from a small startup to
             a global IT consulting firm with offices in multiple countries. Over
             the years, we have successfully delivered hundreds of projects for
             clients ranging from small businesses to Fortune 500 companies. Our
@@ -151,7 +151,7 @@ export default function About() {
             width={100}
             src="/assets/img-7.jpg"
             className="w-100 object-cover h-100"
-            alt="About Sina Consultancy"
+            alt="About Sina"
           />
         </article>
 

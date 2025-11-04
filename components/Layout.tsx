@@ -24,14 +24,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       >
         <div
           className="logo-container flex items-center gap-12 ]"
-          aria-label="Sina Consultancy logo"
+          aria-label="Sina logo"
         >
           <Link href="/" className="no-underline">
             <Image
               width={100}
               height={100}
               src="/assets/Logoimg.png"
-              alt="Sina Consultancy logo"
+              alt="Sina logo"
               className="logo scale-110 md:scale-125 transition-transform duration-300"
             />
           </Link>
@@ -155,7 +155,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <button
                   className="no-underline text-white font-barlow fs-14 font-500 ls-08   gap-1"
                   aria-label="Services"
-                  style={{ justifyContent: "space-between", display: "flex", width: "100%", alignItems: "center" }}
+                  style={{
+                    justifyContent: "space-between",
+                    display: "flex",
+                    width: "100%",
+                    alignItems: "center",
+                  }}
                   onClick={() => setIsServiceOpen(!isServiceOpen)}
                 >
                   <span>Services</span>
@@ -179,28 +184,30 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               {isServiceOpen && (
                 <>
                   <li>
-                    <Link
+                    <a
                       href="/services"
                       className="ero-text-paragraph text-decoration-none color-white"
                     >
                       Business Consulting
-                    </Link>
+                    </a>
                   </li>
+
                   <li>
-                    <Link
+                    <a
+                      href="/services"
+                      className="ero-text-paragraph text-decoration-none color-white"
+                    >
+                      Educational Services
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
                       href="/services"
                       className="ero-text-paragraph text-decoration-none color-white"
                     >
                       Ancillary Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services"
-                      className="ero-text-paragraph text-decoration-none color-white"
-                    >
-                      Educational Services≈
-                    </Link>
+                    </a>
                   </li>
                 </>
               )}
@@ -225,14 +232,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <footer
         className="flex flex-col mt-80 bg-[#0d2743] "
         role="contentinfo"
-        aria-label="Sina Consultancy footer"
+        aria-label="Sina footer"
       >
         <div className="flex dac-footer">
           <Image
             width={100}
             height={100}
             src="/assets/Logoimg.png"
-            alt="Sina Consultancy Logo"
+            alt="Sina Logo"
           />
 
           <div
@@ -240,11 +247,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             aria-label="Footer logo and contact information"
           >
             <div className="dac-footer__info">
+              <p className="cursor-pointer m-0 fs-14 color-white">Sina</p>
               <p className="cursor-pointer m-0 fs-14 color-white">
-                Sina Consultancy
-              </p>
-              <p className="cursor-pointer m-0 fs-14 color-white">
-                Sheikh Zayed Road, Sina Consultancy
+                Sheikh Zayed Road, Sina
               </p>
               <p className="cursor-pointer m-0 fs-14 color-white">
                 ajibademariam5@gmail.com <br />

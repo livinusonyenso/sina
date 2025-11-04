@@ -6,12 +6,12 @@ export default function ContactPag() {
         aria-labelledby="community-heading"
       >
         <h2 id="community-heading" className="flex-one hero-text-heading">
-          Get In Touch
+          Contact us
         </h2>
 
         <div className="flex-one gap-24 flex flex-col">
           <p className="hero-text-paragraph m-0 p-0">
-            Contact Sina Consultancy for expert guidance on business
+            Contact Sina for expert guidance on business
             establishment, growth strategies, and market insights. Our team is
             ready to assist you in navigating the complexities of today{"'"}s
             global business landscape.
@@ -29,7 +29,7 @@ export default function ContactPag() {
       >
         <div className="mw-460 flex flex-col gap-32">
           <h2 className=" hero-text-heading" id="why-associations-heading">
-            Contact us.
+            Join us.
           </h2>
           <p className="m-0 p-0 hero-text-paragraph ">
             Join a vibrant community of professionals and organizations at Sina
@@ -37,7 +37,7 @@ export default function ContactPag() {
             wealth of resources, networking opportunities, and industry insights
             designed to support your growth and success. Whether you{"'"}re
             looking to expand your professional network, enhance your skills, or
-            stay informed about the latest industry trends, Sina Consultancy
+            stay informed about the latest industry trends, Sina
             offers the perfect platform to achieve your goals. Don{"'"}t miss
             out on the chance to be part of a dynamic association that empowers
             its members to thrive in today{"'"}s competitive landscape.

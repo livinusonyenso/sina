@@ -33,7 +33,7 @@ export default function ServiceList() {
   return (
     <section
       className="container mt-80"
-      aria-label="Key benefits of establishing in Sina Consultancy"
+      aria-label="Key benefits of establishing in Sina"
     >
       {team.map((text, idx) => (
         <motion.a
@@ -52,7 +52,7 @@ export default function ServiceList() {
               width={100}
               className="dac-parralex-effect"
               src={text.img}
-              alt="Sina Consultancy skyline representing strategic global access"
+              alt="Sina skyline representing strategic global access"
             />
           </div>
           <div className="professional-card-content flex flex-col gap-16">

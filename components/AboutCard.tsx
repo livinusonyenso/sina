@@ -19,7 +19,7 @@ export default function AboutCard({
             className="text-decoration-none text-white"
             aria-label={heading}
           >
-            {heading || "Register Your Association In Sina Consultancy"}
+            {heading || "Register Your Association In Sina"}
           </Link>
         </h3>
         <span className="arrow-icon" aria-hidden="true">

@@ -51,15 +51,14 @@ export default function Home() {
             id="hero-heading"
             className="hero-text-heading color-white fs-64 line-height-64"
           >
-            Sina Consultancy, Empowering Your Growth in Business, Technology,
-            and Education.
+            Sina Empowering Your Growth in Business, Technology, and Education.
           </h2>
 
           <p className="hero-text-paragraph m-0 color-white ">
             At Sina Consulting Services, we help organisations unlock their full
             potential. Through expert data-driven guidance in business strategy,
             consulting, and trainings, we deliver tailored solutions that enable
-            sustainable growth, efficiency, and innovation. Whether you’re a
+            sustainable growth, efficiency, and innovation. Whether youre a
             startup scaling operations, a mid-size firm undergoing digital
             transformation, or an educational institution seeking modern
             learning solutions, we partner with you to turn challenges into
@@ -70,7 +69,7 @@ export default function Home() {
             href="/about"
             className="dac-btn outline color-white"
             role="button"
-            aria-label="Become a Member at Sina Consultancy"
+            aria-label="Become a Member at Sina"
           >
             Learn More
           </Link>
@@ -78,7 +77,7 @@ export default function Home() {
       </div>
 
       <SectionTitle
-        heading="Sina Consultancy"
+        heading="Sina"
         paragraph="At Sina Consulting Services, we empower organizations and individuals to achieve their full potential. Specializing in business, trainings, and management consultancy, as well as educational services, we deliver tailored solutions that drive growth, efficiency, and innovation. Partner with us to unlock new opportunities and elevate your success."
         ctaText="Learn More"
         href="/about"
@@ -88,14 +87,14 @@ export default function Home() {
 
       <section
         className="action-cards mt-80"
-        aria-label="Actions to register or scale your association in Sina Consultancy"
+        aria-label="Actions to register or scale your association in Sina"
       >
         <AboutCard
-          heading="Register Your Association In Sina Consultancy"
+          heading="Register Your Association In Sina"
           href="/contact"
         />
         <AboutCard
-          heading="Scale Your Association With Sina Consultancy"
+          heading="Scale Your Association With Sina"
           href="/contact"
           className="card-second-img"
         />
@@ -167,27 +166,14 @@ export default function Home() {
             id="card1"
             className="events_card card--stacked active"
             aria-labelledby="event-title-2025"
-            // onClick={() =>
-            //   window.open(
-            //     "https://www.linkedin.com/in/funmilayo-olanrewaju-x/",
-            //     "_blank"
-            //   )
-            // }
             style={{ cursor: "pointer" }}
           >
             <h3
               id="event-title-2025"
               className="card__title text-heading-md m-0"
             >
-              Sina Consultancy Teams
+              Sina Teams
             </h3>
-            {/* <Image
-              height={100}
-              width={100}
-              src="/assets/img-6.jpg"
-              alt="Attendees networking at Sina Consultancy Conference 2025"
-              className="card__image"
-            /> */}
             <p className="m-0 card__date" aria-label="Event Date: July 2025">
               Olufunmilayo Olanrewaju Founder
             </p>
@@ -206,7 +192,7 @@ export default function Home() {
             <a
               style={{ zIndex: 100 }}
               className="card__link"
-              aria-label="Learn more about Sina Consultancy Conference 2025"
+              aria-label="Learn more about Sina Conference 2025"
             >
               <span className="card__icon" aria-hidden="true">
                 <Image
@@ -234,13 +220,13 @@ export default function Home() {
               id="event-title-2026"
               className="card__title text-heading-md m-0"
             >
-              Sina Consultancy Teams
+              Sina Teams
             </h3>
             {/* <Image
               height={100}
               width={100}
               src="/assets/img-6.jpg"
-              alt="Attendees networking at Sina Consultancy Conference 2026"
+              alt="Attendees networking at Sina Conference 2026"
               className="card__image"
             /> */}
             <p className="m-0 card__date" aria-label="Event Date: July 2026">
@@ -262,7 +248,7 @@ export default function Home() {
             <a
               // href="#"
               className="card__link"
-              aria-label="Learn more about Sina Consultancy Conference 2026"
+              aria-label="Learn more about Sina Conference 2026"
               style={{ zIndex: 100 }}
             >
               <span className="card__icon" aria-hidden="true">
@@ -288,7 +274,7 @@ export default function Home() {
           <a
             href="/contact"
             className="dac-btn outline"
-            aria-label="View all upcoming events at Sina Consultancy"
+            aria-label="View all upcoming events at Sina"
           >
             Contact Us
           </a>

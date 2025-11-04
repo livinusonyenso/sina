@@ -15,7 +15,7 @@ export default function Buttons({
         href={href || "#"}
         className={`dac-btn outline ${className || ""}`}
         role="button"
-        aria-label="Learn more about Sina Consultancy"
+        aria-label="Learn more about Sina"
       >
         {title || "About us"}
       </Link>
