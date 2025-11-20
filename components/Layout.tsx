@@ -247,17 +247,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             aria-label="Footer logo and contact information"
           >
             <div className="dac-footer__info">
-              <p className="cursor-pointer m-0 fs-14 color-white">Sina</p>
+              <p className="cursor-pointer m-0 fs-14 color-white">Sina Address</p>
               <p className="cursor-pointer m-0 fs-14 color-white">
-                Sheikh Zayed Road, Sina
+                Office 117, Unit 5
               </p>
               <p className="cursor-pointer m-0 fs-14 color-white">
-                ajibademariam5@gmail.com <br />
-                jummyo@yahoo.com
+                399-405 Oxford Street <br />
+                Mayfair, London.
               </p>
-              <p className="cursor-pointer m-0 fs-14 color-white">
-                +234 814 342 0528
-              </p>
+              <p className="cursor-pointer m-0 fs-14 color-white">W1C 2BU</p>
             </div>
           </div>
 
@@ -268,7 +266,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   className="text-decoration-none color-white "
                   href="/about"
                 >
-                  About DAC
+                  About Sina
                 </Link>
               </li>
               <li className="list-style-none cursor-pointer m-0 fs-14">
@@ -288,7 +286,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </ul>
           </nav>
 
-          <nav className="dac-footer__links" aria-label="Legal links">
+          {/* <nav className="dac-footer__links" aria-label="Legal links">
             <ul className="p-0 flex flex-col gap-4">
               <li className="list-style-none cursor-pointer m-0 fs-14">
                 <Link className="text-decoration-none color-white " href="#">
@@ -301,13 +299,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
 
           <div
             className="dac-footer__social"
             aria-label="Follow us on social media"
           >
-            <Link href="#" aria-label="LinkedIn">
+            <Link
+              href="https://www.linkedin.com/company/sina-consulting-services/"
+              aria-label="LinkedIn"
+            >
               <Image
                 width={24}
                 height={24}
@@ -316,7 +317,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 alt="LinkedIn icon"
               />
             </Link>
-            <Link href="#" aria-label="Facebook">
+            <Link
+              href="https://www.facebook.com/share/1E7BkLNaks/?mibextid=wwXIfr"
+              aria-label="Facebook"
+            >
               <Image
                 width={24}
                 height={24}

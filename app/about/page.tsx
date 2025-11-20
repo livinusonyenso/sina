@@ -36,51 +36,33 @@ export default function About() {
 
         <div className="flex-one flex flex-col gap-24">
           <p className="hero-text-paragraph p-0 m-0">
-            Sina Consulting Services was founded with a clear purpose: to help
-            organisations address complex challenges with precision, insight,
-            and integrity. We bring together expertise in Business consulting in
-            the areas of Management consulting, Analytics consulting, Credit
-            risk advisory, and Trainings to deliver strategies that are both
-            rigorous and actionable. By applying structured analysis, proven
-            methodologies, and forward-thinking perspectives, we enable clients
-            to achieve measurable outcomes and sustained competitive advantage.
-            Our philosophy is rooted in partnership and trust. We work closely
-            with clients to understand their unique contexts and priorities,
-            ensuring that the solutions we deliver are tailored, practical, and
-            sustainable. Transparency and objectivity guide every engagement,
-            allowing us to provide advice that is both trusted and
-            transformative. With a diverse team of professionals drawn from
-            consulting, industry, and academia, we combine technical expertise
-            with real-world experience. This multidisciplinary approach allows
-            us to deliver insights that are not only strategic but also
-            operationally effective. As industries and technologies continue to
-            evolve, we remain agile and committed to innovation, ensuring our
-            clients are always positioned to succeed in a rapidly changing
-            environment.
+            <b> Mission </b>
+            <br />
+            To help organisations navigate complex challenges with data-driven
+            insights, precision, and integrity by delivering practical,
+            actionable strategies in Business and Management Consulting and
+            Professional Training.
           </p>
           <p className="hero-text-paragraph p-0 m-0">
-            Our mission is to empower organizations with the right technology
-            solutions that enhance efficiency, productivity, and competitiveness
-            in the ever-evolving digital landscape. We believe in building
-            long-term partnerships with our clients, understanding their unique
-            challenges, and delivering tailored solutions that meet their
-            specific needs. Our vision is to be a trusted advisor and a leading
-            player in the global IT consulting industry, known for our
-            innovation, integrity, and excellence.
+            <b> Vision </b>
+            <br />
+            To be a trusted partner for organisations worldwide, empowering them
+            to achieve data-driven growth, measurable impact, and lasting
+            competitive advantage
           </p>
 
-          <Link
+          {/* <Link
             href="/contact"
             className="dac-btn outline"
             role="button"
             aria-label="Learn more about Sina"
           >
             Contact us
-          </Link>
+          </Link> */}
         </div>
       </section>
 
-      <section
+      {/*  <section
         className="action-cards mt-80 gap-24"
         aria-label="Actions to register or scale your association in Sina"
       >
@@ -101,7 +83,7 @@ export default function About() {
         ></article>
       </section>
 
-      {/* <section
+    <section
         className="flex gap-24 mt-80 flex-wrap"
         aria-labelledby="community-heading"
       >
@@ -125,7 +107,7 @@ export default function About() {
         </div>
       </section> */}
 
-      <section
+      {/* <section
         className="flex gap-24 mt-80 flex-wrap mobile-flex-wrap"
         aria-labelledby="mission-vision-heading"
       >
@@ -227,7 +209,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

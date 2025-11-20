@@ -23,7 +23,7 @@ export default function Services() {
 
         <ul>
           <b>Our ancillary services include:</b>
-          <p style={{height: "40px"}} ></p>
+          <p style={{ height: "40px" }}></p>
           <li className="mb-2">
             <b>- Project Management Support:</b>
             <p className="hero-text-paragraph m-0">
@@ -34,22 +34,10 @@ export default function Services() {
           <li className="mb-2">
             <b>- Technology Advisory</b>
             <p className="hero-text-paragraph m-0">
-              Our Technology Advisory service helps businesses make strategic
-              decisions about the tools, platforms, and systems that support
-              growth and efficiency
-            </p>
-            <p className="hero-text-paragraph m-0">
-              We guide you in selecting software that fits your operations and
-              future plans, ensure your systems work seamlessly together, and
-              provide advice on building technology that can scale with your
-              business.
-            </p>
-            <p className="hero-text-paragraph m-0">
-              We also share insights into emerging technologies and innovations
-              that can create competitive advantages. Technology Advisory
-              bridges the gap between knowing you need technology and having the
-              expertise to implement it effectively — giving you expert guidance
-              without the need for full-time internal specialists.
+              At Sina Consulting Services, we help organisations harness
+              technology to drive growth, efficiency, and strategic advantage.
+              Through digital transformation, our data-driven guidance ensures
+              technology investments deliver measurable, real-world impact.
             </p>
           </li>
         </ul>

@@ -1,5 +1,5 @@
 "use client";
-import SectionTitle from "@/components/SectionTitle";
+// import SectionTitle from "@/components/SectionTitle";
 import Link from "next/link";
 // import useOwlCarouselHook, {
 //   owlConfig_two_and_half_box,
@@ -30,23 +30,18 @@ export default function Services() {
 
         <div className="flex-2 flex flex-col gap-24">
           <p className="hero-text-paragraph m-0">
-            At Sina Consulting Services, we are passionate about driving
-            progress for businesses, organizations, and individuals. Our
-            comprehensive suite of services—spanning business strategy
-            solutions, management consultancy, and professional education—is
-            rooted in a deep understanding of modern challenges and
-            opportunities. We believe that sustainable growth comes from
-            tailored solutions, rigorous analysis, and a commitment to
-            continuous improvement.
+            At Sina Consulting Services, we empower organizations and
+            individuals to achieve their full potential. Specializing in
+            business and management consultancy, as well as educational
+            services. We deliver tailored solutions that drive growth,
+            efficiency, and innovation.
           </p>
           <p className="hero-text-paragraph m-0">
-            Whether you are seeking to transform your business, optimize your
-            technology landscape, enhance your management practices, or elevate
-            your teams expertise, our experienced consultants are ready to guide
-            you. We combine industry insight with practical experience,
-            delivering measurable value at every stage of your journey. Below,
-            you will find a detailed overview of the core services that define
-            Sina Consulting Services.
+            Partner with us to unlock new opportunities and elevate your
+            success. Our team of seasoned experts collaborates closely with
+            clients to understand their unique challenges and goals. We provide
+            data-driven insights and comprehensive training programs designed
+            for smart solutions and measurable impact.
           </p>
         </div>
       </section>
@@ -222,17 +217,10 @@ export default function Services() {
             <li className="mb-2">
               <b>- Technology Advisory:</b>
               <p className="hero-text-paragraph">
-                Our Technology Advisory service helps businesses make strategic
-                decisions about the tools, platforms, and systems that support
-                growth and efficiency. We guide you in selecting software that
-                fits your operations and future plans, ensure your systems work
-                seamlessly together, and provide advice on building technology
-                that can scale with your business. We also share insights into
-                emerging technologies and innovations that can create
-                competitive advantages. Technology Advisory bridges the gap
-                between knowing you need technology and having the expertise to
-                implement it effectively, giving you guidance without the need
-                for full-time internal experts
+                At Sina Consulting Services, we help organisations harness
+                technology to drive growth, efficiency, and strategic advantage.
+                Through digital transformation, our data-driven guidance ensures
+                technology investments deliver measurable, real-world impact.
               </p>
             </li>
           </ul>

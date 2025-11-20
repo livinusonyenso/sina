@@ -11,14 +11,17 @@ export default function ContactPag() {
 
         <div className="flex-one gap-24 flex flex-col">
           <p className="hero-text-paragraph m-0 p-0">
-            Contact Sina for expert guidance on business
-            establishment, growth strategies, and market insights. Our team is
-            ready to assist you in navigating the complexities of today{"'"}s
-            global business landscape.
+            Contact Sina for expert guidance on business establishment, growth
+            strategies, and market insights. Our team is ready to assist you in
+            navigating the complexities of today{"'"}s global business
+            landscape.
           </p>
           <p className="hero-text-paragraph m-0 p-0">
-            Reach out to us via phone at +234 814 342 0528 or email us at
-            ajibademariam5@gmail.com
+            Reach out to us via phone at 02034321035 or email us at
+            <a href="mailto://admin@sinaconsultingservices.co.uk">
+              {" "}
+              admin@sinaconsultingservices.co.uk{" "}
+            </a>
           </p>
         </div>
       </section>
@@ -37,10 +40,10 @@ export default function ContactPag() {
             wealth of resources, networking opportunities, and industry insights
             designed to support your growth and success. Whether you{"'"}re
             looking to expand your professional network, enhance your skills, or
-            stay informed about the latest industry trends, Sina
-            offers the perfect platform to achieve your goals. Don{"'"}t miss
-            out on the chance to be part of a dynamic association that empowers
-            its members to thrive in today{"'"}s competitive landscape.
+            stay informed about the latest industry trends, Sina offers the
+            perfect platform to achieve your goals. Don{"'"}t miss out on the
+            chance to be part of a dynamic association that empowers its members
+            to thrive in today{"'"}s competitive landscape.
           </p>
         </div>
         <div className="flex-one flex flex-col gap-24">
@@ -87,7 +90,7 @@ export default function ContactPag() {
                   <input
                     type="tel"
                     id="contact"
-                    placeholder="+234 814 342 0528"
+                    placeholder="02034321035"
                   />
                 </div>
 

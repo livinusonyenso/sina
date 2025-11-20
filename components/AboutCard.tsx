@@ -23,13 +23,15 @@ export default function AboutCard({
           </Link>
         </h3>
         <span className="arrow-icon" aria-hidden="true">
-          <Image
-            height={100}
-            width={100}
-            src="/assets/card-arrow.svg"
-            role="presentation"
-            alt=""
-          />
+          <Link href={href || "#"} aria-label={heading}>
+            <Image
+              height={100}
+              width={100}
+              src="/assets/card-arrow.svg"
+              role="presentation"
+              alt=""
+            />
+          </Link>
         </span>
       </div>
     </article>

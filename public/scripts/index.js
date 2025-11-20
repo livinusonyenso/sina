@@ -138,24 +138,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Card carousel functionality
 
-  setTimeout(() => {
-    document.querySelectorAll(".card__link").forEach((link) => {
-      console.log(link);
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        // Remove active class from current card
-        cards[activeIndex].classList.remove("active");
-        cards[activeIndex].classList.add("behind");
+  // setTimeout(() => {
+  //   document.querySelectorAll(".card__link").forEach((link) => {
+  //     console.log(link);
+  //     link.addEventListener("click", (e) => {
+  //       e.preventDefault();
+  //       // Remove active class from current card
+  //       cards[activeIndex].classList.remove("active");
+  //       cards[activeIndex].classList.add("behind");
 
-        // Move to next card
-        activeIndex = (activeIndex + 1) % cards.length;
+  //       // Move to next card
+  //       activeIndex = (activeIndex + 1) % cards.length;
 
-        // Show next card
-        cards[activeIndex].classList.add("active");
-        cards[activeIndex].classList.remove("behind");
-      });
-    });
-  }, 6000);
+  //       // Show next card
+  //       cards[activeIndex].classList.add("active");
+  //       cards[activeIndex].classList.remove("behind");
+  //     });
+  //   });
+  // }, 4000);
 
   // Video play button functionality
   const video = document.getElementById("myVideo");
@@ -227,3 +227,5 @@ document.addEventListener("DOMContentLoaded", () => {
 //     });
 //   }
 // }
+
+ 
